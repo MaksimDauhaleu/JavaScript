@@ -1,0 +1,14 @@
+<script>
+function printreturn(arr){
+    for(var i=0;i<arr.length;i++){
+        console.log(arr[arr.length-2]);
+        if(arr[i]%2!==0){
+            return arr[i];
+        }
+    }
+}
+
+
+
+console.log(printreturn([11,3,4,6,54,2]));
+</script>

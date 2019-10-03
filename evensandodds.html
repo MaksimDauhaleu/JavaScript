@@ -1,0 +1,21 @@
+<script>
+    function evensOdds(arr){
+        var countOdds = 0;
+        var countEvens = 0;
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]%2===1){
+                countOdds++;
+            }
+            if(arr[i]%2===0){
+                countEvens++;
+            }
+        }
+        if(countOdds>=3){
+            console.log("That's Odds")
+        }
+        if(countEvens >= 3){
+            console.log("Even more so!");
+        }
+    }
+    console.log(evensOdds([1,2,3,1,5,2,4]));
+</script>
